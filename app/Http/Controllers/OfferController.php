@@ -60,7 +60,7 @@ class OfferController extends Controller
                 'slug' => 'course-name-one',
                 'image' => 'https://s3-us-west-2.amazonaws.com/uccleon.peide.website/projects/1/G29IpdxxiJpEkbmhNA22w80rPrBsw5wkdOzhuDgK.jpeg',
                 'price' => '125',
-                'start_date' => Carbon::parse('2017-05-14 08:00')->format('l jS \\of F Y h:i'),
+                'start_date' => Carbon::parse('2017-05-14 08:00')->formatLocalized('%d de %B %Y %H:%M %P'),
                 'modality' => 'sunday',
                 'faqs' => [
                     [
@@ -75,14 +75,14 @@ class OfferController extends Controller
                 ],
                 'schedules' => [
                     [
-                        'start_time' => Carbon::parse('2017-05-14 08:00')->format('l jS \\of F Y h:i'),
-                        'ending_time' => Carbon::parse('2017-05-14 05:00')->format('h:i')
+                        'start_time' => Carbon::parse('2017-05-14 08:00')->formatLocalized('%d de %B %Y %H:%M %P'),
+                        'ending_time' => Carbon::parse('2017-05-14 05:00')->formatLocalized('%H:%M')
                     ],[
-                        'start_time' => Carbon::parse('2017-05-21 08:00')->format('l jS \\of F Y h:i'),
-                        'ending_time' => Carbon::parse('2017-05-21 05:00')->format('h:i')
+                        'start_time' => Carbon::parse('2017-05-21 08:00')->formatLocalized('%d de %B %Y %H:%M %P'),
+                        'ending_time' => Carbon::parse('2017-05-21 05:00')->formatLocalized('%H:%M')
                     ],[
-                        'start_time' => Carbon::parse('2017-05-28 08:00')->format('l jS \\of F Y h:i'),
-                        'ending_time' => Carbon::parse('2017-05-28 05:00')->format('h:i')
+                        'start_time' => Carbon::parse('2017-05-28 08:00')->formatLocalized('%d de %B %Y %H:%M %P'),
+                        'ending_time' => Carbon::parse('2017-05-28 05:00')->formatLocalized('%H:%M')
                     ]
                 ],
                 'modules' => [
@@ -109,7 +109,7 @@ class OfferController extends Controller
                 'slug' => 'course-name-two',
                 'image' => ' https://s3-us-west-2.amazonaws.com/uccleon.peide.website/projects/12/Buj2vANNoly32mm8oCq0ihqmWV6Ra6LldByVaSGD.jpeg',
                 'price' => '80',
-                'start_date' => Carbon::parse('2017-05-14 08:00')->format('l jS \\of F Y h:i'),
+                'start_date' => Carbon::parse('2017-05-14 08:00')->formatLocalized('%d de %B %Y %H:%M %P'),
                 'modality' => 'saturday',
                 'faqs' => [
                     [
@@ -128,11 +128,11 @@ class OfferController extends Controller
                 ],
                 'schedules' => [
                     [
-                        'start_time' => Carbon::parse('2017-05-14 08:00')->format('l jS \\of F Y h:i'),
-                        'ending_time' => Carbon::parse('2017-05-14 05:00')->format('h:i')
+                        'start_time' => Carbon::parse('2017-05-14 08:00')->formatLocalized('%d de %B %Y %H:%M %P'),
+                        'ending_time' => Carbon::parse('2017-05-14 05:00')->formatLocalized('%H:%M')
                     ],[
-                        'start_time' => Carbon::parse('2017-05-21 08:00')->format('l jS \\of F Y h:i'),
-                        'ending_time' => Carbon::parse('2017-05-21 05:00')->format('h:i')
+                        'start_time' => Carbon::parse('2017-05-21 08:00')->formatLocalized('%d de %B %Y %H:%M %P'),
+                        'ending_time' => Carbon::parse('2017-05-21 05:00')->formatLocalized('%H:%M')
                     ]
                 ],
                 'modules' => [
