@@ -13,11 +13,13 @@
     <body>
         @include('partials.nav')
 
-        <div id="container" class="container">
-            <div class="columns">
-                @yield('body')
+        <section class="section">
+            <div class="container">
+                <div class="columns">
+                    @yield('body')
+                </div>
             </div>
-        </div>
+        </section>
 
         @include('partials.footer')
 

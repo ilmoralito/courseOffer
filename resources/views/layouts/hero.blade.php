@@ -206,9 +206,11 @@
             @include('partials.hero-footer')
         </section>
 
-        <div class="container" style="margin-top: 50px; margin-bottom: 50px;">
-            @yield('body')
-        </div>
+        <section class="section">
+            <div class="container">
+                @yield('body')
+            </div>
+        </section>
 
         @include('partials.footer')
 
