@@ -7,7 +7,7 @@
                 </li>
 
                 <li class="{{ $action == 'faqs' ? 'is-active' : '' }}">
-                    <a href="/offers/{{ $offer['slug'] }}/faqs">FAQ'S</a>
+                    <a href="/offers/{{ $offer['slug'] }}/faqs">Preguntas comunes</a>
                 </li>
 
                 <li class="{{ $action == 'schedules' ? 'is-active' : '' }}">
