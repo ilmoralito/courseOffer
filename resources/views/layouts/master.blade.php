@@ -13,6 +13,8 @@
     <body>
         @include('partials.nav')
 
+        @include('partials.headquarters-nav')
+
         <section class="section">
             <div class="container">
                 <div class="columns">

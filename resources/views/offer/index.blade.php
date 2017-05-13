@@ -4,29 +4,36 @@
 
 @section('body')
     <div class="column">
-        @foreach ($offers as $offer)
-            <div class="columns">
-                <div class="column is-4">
-                    <figure class="image">
-                        <img src="{{ $offer['image'] }}" alt="{{ $offer['name'] }}">
-                    </figure>
-                </div>
+        <div class="columns is-multiline">
+            @if ($headquarter)
+                @foreach ($headquarter['offers'] as $offer)
+                    <div class="column is-one-third">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image">
+                                    <img src="{{ $offer['image'] }}" alt="{{ $offer['name'] }}">
+                                </figure>
+                            </div>
 
-                <div class="column">
-                    <p class="title">{{ $offer['name'] }}</p>
-                    <p class="subtitle">Dirigido a profesionales en las areas de {{ implode(', ' , $offer['addressed_to']) }}</p>
+                            <div class="card-content">
+                                <div class="content">
+                                    {{ $offer['name'] }}
 
-                    <p>Inversion: {{ $offer['price'] }}</p>
-                    <p>Fecha de inicio: {{ $offer['start_date'] }}</p>
+                                    <p>
+                                        <small>Inicio de clases: {{ $offer['start_date'] }}</small>
+                                    </p>
+                                </div>
+                            </div>
 
-                    <br>
-                    <div class="field">
-                        <p class="control">
-                            <a href="/offers/{{ $offer['slug'] }}" class="button">Saber mas</a>
-                        </p>
+                            <footer class="card-footer">
+                                <a href="/offers/{{ $headquarter['headquarter'] }}/{{ $offer['slug'] }}" class="card-footer-item">Saber mas</a>
+                            </footer>
+                        </div>
                     </div>
-                </div>
-            </div>
-        @endforeach
+                @endforeach
+            @else
+                <p>Sin datos que mostrar</p>
+            @endif
+        </div>
     </div>
 @endsection
