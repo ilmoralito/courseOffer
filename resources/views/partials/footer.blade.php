@@ -4,20 +4,8 @@
             <div class="column is-9">
                 <p>UCC Universidad de Ciencias Comerciales</p>
 
-                <p>Nicaragua, Leon, frente al campus medico</p>
-
-                <p>(505) <a href="tel:23110812">2311 0812</a> Ext. 112</p>
-
                 <p>
-                    <a href="mailto:info@ucc.edu.ni">info@ucc.edu.ni</a>
-                </p>
-
-                <p>
-                    <a href="/contact">Mapa</a>
-                </p>
-
-                <p>
-                    <a href="/contact">Mas imformacion de contacto</a>
+                    <a href="/contact">Imformacion de contacto</a>
                 </p>
             </div>
 

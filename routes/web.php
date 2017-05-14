@@ -1,6 +1,8 @@
 <?php
 
-Route::get('/', 'SubscribeController@index');
+Route::get('/', 'HomeController@index');
+
+Route::get('/subscribe', 'SubscribeController@index');
 
 Route::get('/offers/{headquarter?}', 'OfferController@index');
 Route::get('/offers/{headquarter}/{slug}', 'OfferController@show');

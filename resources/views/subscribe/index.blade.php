@@ -1,9 +1,9 @@
-@extends('layouts.master')
-
-@section('title', 'Suscribete')
+@extends('layouts.subscribe')
 
 @section('body')
-    <div class="column is-half is-offset-one-quarter">
-        @include('partials.subscribe')
+    @include('partials.subscribe')
+
+    <div class="has-text-centered">
+        <a href="/" class="button is-primary is-outlined">Ir a la pagina principal</a>
     </div>
 @endsection
