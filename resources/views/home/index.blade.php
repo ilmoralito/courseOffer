@@ -92,7 +92,7 @@
                     </div>
 
                     <div class="column is-narrow">
-                        <a href="/subscribe" class="button is-primary is-outlined has-text">Suscribete</a>
+                        <a href="/subscribe" class="button is-primary is-outlined is-fullwidth">Suscribete</a>
                     </div>
                 </div>
             </div>

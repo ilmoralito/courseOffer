@@ -19,8 +19,7 @@
                     <h1 class="title">Los mejores cursos para instituciones y particulares</h1>
                     <h2 class="subtitle">Enseñanza cerca de ti</h2>
 
-                    <a href="#" class="button is-white is-outlined">Eres una empresa</a>
-                    <a href="#" class="button is-white is-outlined">Eres particular</a>
+                    <a href="/offers" class="button is-white is-outlined">Visita los cursos proximos</a>
                 </div>
             </div>
         </section>
