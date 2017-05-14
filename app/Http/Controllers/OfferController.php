@@ -56,7 +56,7 @@ class OfferController extends Controller
                         'slug' => 'Course-name-one',
                         'image' => 'https://s3-us-west-2.amazonaws.com/uccleon.peide.website/projects/1/G29IpdxxiJpEkbmhNA22w80rPrBsw5wkdOzhuDgK.jpeg',
                         'price' => '125',
-                        'start_date' => Carbon::parse('2017-05-14 08:00')->formatLocalized('%d de %B %Y %H:%M %P'),
+                        'start_date' => Carbon::parse('2017-05-14 08:00')->formatLocalized('%d de %B'),
                         'modality' => 'sunday',
                         'faqs' => [
                             [
@@ -99,13 +99,16 @@ class OfferController extends Controller
                         'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim nobis, fugit voluptates excepturi iusto officiis reprehenderit quas nam sint tempore, assumenda similique numquam ullam nostrum quisquam iure dolor expedita repudiandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta ratione ab reprehenderit omnis voluptates quae ullam vero, quidem maxime molestiae tenetur, voluptatibus hic eaque numquam est quas, dicta repellendus nulla.',
                         'addressed_to' => [
                             'Sistemas', 'Marketing', 'Administracion'
+                        ],
+                        'prerequisites' => [
+                            'Requisite1', 'Requisite2', 'Requisite3'
                         ]
                     ],[
                         'name' => 'Course name two',
                         'slug' => 'Course-name-two',
                         'image' => ' https://s3-us-west-2.amazonaws.com/uccleon.peide.website/projects/12/Buj2vANNoly32mm8oCq0ihqmWV6Ra6LldByVaSGD.jpeg',
                         'price' => '80',
-                        'start_date' => Carbon::parse('2017-05-14 08:00')->formatLocalized('%d de %B %Y %H:%M %P'),
+                        'start_date' => Carbon::parse('2017-05-14 08:00')->formatLocalized('%d de %B'),
                         'modality' => 'saturday',
                         'faqs' => [
                             [
@@ -118,7 +121,7 @@ class OfferController extends Controller
                                 'updated_at' => $now
                             ],[
                                 'question' => 'Question three?',
-                                'answer' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quidem iste neque doloremque assumenda vitae adipisci aspernatur, odit dolorum!',
+                                'answer' => 'Lorem ipsum dolor sit amet',
                                 'updated_at' => $now
                             ]
                         ],
@@ -144,7 +147,8 @@ class OfferController extends Controller
                         'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim nobis, fugit voluptates excepturi iusto officiis reprehenderit quas nam sint tempore, assumenda similique numquam ullam nostrum quisquam iure dolor expedita repudiandae.',
                         'addressed_to' => [
                             'Agraria'
-                        ]
+                        ],
+                        'prerequisites' => []
                     ]
                 ]
             ],[
@@ -157,7 +161,7 @@ class OfferController extends Controller
                         'price' => '120',
                         'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa odit, reiciendis doloribus! Praesentium at aliquid dolorum delectus odit tenetur quasi maiores voluptatum quia, suscipit possimus ullam! Reiciendis consequuntur, veritatis magni.',
                         'addressed_to' => ['Marketing'],
-                        'start_date' => Carbon::parse('2017-05-14 08:00')->formatLocalized('%d de %B %Y %H:%M %P'),
+                        'start_date' => Carbon::parse('2017-05-14 08:00')->formatLocalized('%d de %B'),
                         'modality' => 'sunday',
                         'faqs' => [
                             [
@@ -182,11 +186,11 @@ class OfferController extends Controller
                             ]
                         ],
                         'modules' => [
-                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nulla error accusamus, labore, sint sit iusto harum excepturi ipsam cupiditate necessitatibus deserunt sequi asperiores vero. Ipsum doloribus, quidem nisi neque.',
-                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nulla error accusamus, labore, sint sit iusto harum excepturi ipsam cupiditate necessitatibus deserunt sequi asperiores vero. Ipsum doloribus, quidem nisi neque.',
-                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nulla error accusamus, labore, sint sit iusto harum excepturi ipsam cupiditate necessitatibus deserunt sequi asperiores vero. Ipsum doloribus, quidem nisi neque.',
-                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nulla error accusamus, labore, sint sit iusto harum excepturi ipsam cupiditate necessitatibus deserunt sequi asperiores vero. Ipsum doloribus, quidem nisi neque.',
-                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nulla error accusamus, labore, sint sit iusto harum excepturi ipsam cupiditate necessitatibus deserunt sequi asperiores vero. Ipsum doloribus, quidem nisi neque.',
+                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nulla error accusamus',
+                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nulla error accusamus, labore',
+                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+                            'Lorem ipsum dolor sit amet',
                         ],
                         'tutors' => [
                             [
@@ -199,8 +203,8 @@ class OfferController extends Controller
                                 'name' => 'Peter Beckman',
                                 'title' => 'Dr.'
                             ]
-                        ]
-
+                        ],
+                        'prerequisites' => []
                     ]
                 ]
             ],[
@@ -213,7 +217,7 @@ class OfferController extends Controller
                         'price' => '80',
                         'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa odit, reiciendis doloribus! Praesentium at aliquid dolorum delectus odit tenetur quasi maiores voluptatum quia, suscipit possimus ullam! Reiciendis consequuntur, veritatis magni.',
                         'addressed_to' => ['Marketing'],
-                        'start_date' => Carbon::parse('2017-05-14 08:00')->formatLocalized('%d de %B %Y %H:%M %P'),
+                        'start_date' => Carbon::parse('2017-05-14 08:00')->formatLocalized('%d de %B'),
                         'modality' => 'sunday',
                         'faqs' => [
                             [
@@ -247,13 +251,13 @@ class OfferController extends Controller
                             ]
                         ],
                         'modules' => [
-                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nulla error accusamus, labore, sint sit iusto harum excepturi ipsam cupiditate necessitatibus deserunt sequi asperiores vero. Ipsum doloribus, quidem nisi neque.',
-                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nulla error accusamus, labore, sint sit iusto harum excepturi ipsam cupiditate necessitatibus deserunt sequi asperiores vero. Ipsum doloribus, quidem nisi neque.',
-                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nulla error accusamus, labore, sint sit iusto harum excepturi ipsam cupiditate necessitatibus deserunt sequi asperiores vero. Ipsum doloribus, quidem nisi neque.',
-                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nulla error accusamus, labore, sint sit iusto harum excepturi ipsam cupiditate necessitatibus deserunt sequi asperiores vero. Ipsum doloribus, quidem nisi neque.',
-                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nulla error accusamus, labore, sint sit iusto harum excepturi ipsam cupiditate necessitatibus deserunt sequi asperiores vero. Ipsum doloribus, quidem nisi neque.',
-                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nulla error accusamus, labore, sint sit iusto harum excepturi ipsam cupiditate necessitatibus deserunt sequi asperiores vero. Ipsum doloribus, quidem nisi neque.',
-                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nulla error accusamus, labore, sint sit iusto harum excepturi ipsam cupiditate necessitatibus deserunt sequi asperiores vero. Ipsum doloribus, quidem nisi neque.',
+                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
                         ],
                         'tutors' => [
                             [
@@ -266,7 +270,8 @@ class OfferController extends Controller
                                 'name' => 'Ray Charles',
                                 'title' => 'Dr.'
                             ]
-                        ]
+                        ],
+                        'prerequisites' => ['Requisite1', 'Requisite4']
                     ],[
                         'name' => 'Course all name goes here',
                         'slug' => 'Course-all-name-goes-here',
@@ -274,7 +279,7 @@ class OfferController extends Controller
                         'price' => '120',
                         'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa odit, reiciendis doloribus! Praesentium at aliquid dolorum delectus odit tenetur quasi maiores voluptatum quia, suscipit possimus ullam! Reiciendis consequuntur, veritatis magni.',
                         'addressed_to' => ['Marketing', 'Sistemas'],
-                        'start_date' => Carbon::parse('2017-05-14 08:00')->formatLocalized('%d de %B %Y %H:%M %P'),
+                        'start_date' => Carbon::parse('2017-05-14 08:00')->formatLocalized('%d de %B'),
                         'modality' => 'sunday',
                         'faqs' => [
                             [
@@ -299,12 +304,12 @@ class OfferController extends Controller
                             ]
                         ],
                         'modules' => [
+                            'Lorem ipsum dolor sit amet',
+                            'Lorem ipsum dolor sit amet',
+                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
                             'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nulla error accusamus, labore, sint sit iusto harum excepturi ipsam cupiditate necessitatibus deserunt sequi asperiores vero. Ipsum doloribus, quidem nisi neque.',
-                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nulla error accusamus, labore, sint sit iusto harum excepturi ipsam cupiditate necessitatibus deserunt sequi asperiores vero. Ipsum doloribus, quidem nisi neque.',
-                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nulla error accusamus, labore, sint sit iusto harum excepturi ipsam cupiditate necessitatibus deserunt sequi asperiores vero. Ipsum doloribus, quidem nisi neque.',
-                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nulla error accusamus, labore, sint sit iusto harum excepturi ipsam cupiditate necessitatibus deserunt sequi asperiores vero. Ipsum doloribus, quidem nisi neque.',
-                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nulla error accusamus, labore, sint sit iusto harum excepturi ipsam cupiditate necessitatibus deserunt sequi asperiores vero. Ipsum doloribus, quidem nisi neque.',
-                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nulla error accusamus, labore, sint sit iusto harum excepturi ipsam cupiditate necessitatibus deserunt sequi asperiores vero. Ipsum doloribus, quidem nisi neque.',
+                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
+                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit',
                             'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nulla error accusamus, labore, sint sit iusto harum excepturi ipsam cupiditate necessitatibus deserunt sequi asperiores vero. Ipsum doloribus, quidem nisi neque.',
                         ],
                         'tutors' => [
@@ -318,7 +323,8 @@ class OfferController extends Controller
                                 'name' => 'Peter Beckman',
                                 'title' => 'Dr.'
                             ]
-                        ]
+                        ],
+                        'prerequisites' => []
                     ],[
                         'name' => 'Course no name goes here',
                         'slug' => 'Course-no-name-goes-here',
@@ -326,7 +332,7 @@ class OfferController extends Controller
                         'price' => '80',
                         'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa odit, reiciendis doloribus! Praesentium at aliquid dolorum delectus odit tenetur quasi maiores voluptatum quia, suscipit possimus ullam! Reiciendis consequuntur, veritatis magni.',
                         'addressed_to' => ['Marketing'],
-                        'start_date' => Carbon::parse('2017-05-14 08:00')->formatLocalized('%d de %B %Y %H:%M %P'),
+                        'start_date' => Carbon::parse('2017-05-14 08:00')->formatLocalized('%d de %B'),
                         'modality' => 'sunday',
                         'faqs' => [
                             [
@@ -360,13 +366,13 @@ class OfferController extends Controller
                             ]
                         ],
                         'modules' => [
-                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nulla error accusamus, labore, sint sit iusto harum excepturi ipsam cupiditate necessitatibus deserunt sequi asperiores vero. Ipsum doloribus, quidem nisi neque.',
-                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nulla error accusamus, labore, sint sit iusto harum excepturi ipsam cupiditate necessitatibus deserunt sequi asperiores vero. Ipsum doloribus, quidem nisi neque.',
-                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nulla error accusamus, labore, sint sit iusto harum excepturi ipsam cupiditate necessitatibus deserunt sequi asperiores vero. Ipsum doloribus, quidem nisi neque.',
-                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nulla error accusamus, labore, sint sit iusto harum excepturi ipsam cupiditate necessitatibus deserunt sequi asperiores vero. Ipsum doloribus, quidem nisi neque.',
-                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nulla error accusamus, labore, sint sit iusto harum excepturi ipsam cupiditate necessitatibus deserunt sequi asperiores vero. Ipsum doloribus, quidem nisi neque.',
-                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nulla error accusamus, labore, sint sit iusto harum excepturi ipsam cupiditate necessitatibus deserunt sequi asperiores vero. Ipsum doloribus, quidem nisi neque.',
-                            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nulla error accusamus, labore, sint sit iusto harum excepturi ipsam cupiditate necessitatibus deserunt sequi asperiores vero. Ipsum doloribus, quidem nisi neque.',
+                            'Lorem ipsum dolor sit amet',
+                            'Lorem ipsum dolor sit amet',
+                            'Lorem ipsum dolor sit amet',
+                            'Lorem ipsum dolor sit amet',
+                            'Lorem ipsum dolor sit amet',
+                            'Lorem ipsum dolor sit amet',
+                            'Lorem ipsum dolor sit amet',
                         ],
                         'tutors' => [
                             [
@@ -379,7 +385,8 @@ class OfferController extends Controller
                                 'name' => 'Ray Charles',
                                 'title' => 'Dr.'
                             ]
-                        ]
+                        ],
+                        'prerequisites' => ['Requisite1', 'Requisite2']
                     ]
                 ]
             ]

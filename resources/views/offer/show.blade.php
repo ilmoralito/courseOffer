@@ -15,19 +15,31 @@
 
                 <p>{{ $offer['description'] }}</p>
 
-                <p>Modulos</p>
+                <p>Temas a aprender</p>
 
                 <ul>
                     @foreach ($offer['modules'] as $module)
                         <li>{{ $module }}</li>
                     @endforeach
                 </ul>
+
+                <p>Requisitos previos</p>
+
+                @if ($offer['prerequisites'])
+                    <ul>
+                        @foreach ($offer['prerequisites'] as $requirement)
+                            <li>{{ $requirement }}</li>
+                        @endforeach
+                    </ul>
+                @else
+                    <p>Ninguno</p>
+                @endif
             </div>
         </div>
 
         <div class="column">
             <div class="box">
-                <table class="table">
+                <table class="table" style="margin-bottom: 0;">
                     <tbody>
                         <tr>
                             <td>Modalidad</td>

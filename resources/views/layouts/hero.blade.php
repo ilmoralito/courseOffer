@@ -188,7 +188,7 @@
     <body>
         @include('partials.nav')
 
-        <section class="hero is-primary">
+        <section class="hero is-primary is-bold">
             <div class="hero-body">
                 <div class="container">
                     <div class="columns is-vcentered">
