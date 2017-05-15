@@ -1,4 +1,4 @@
-<nav class="nav has-shadow">
+<nav class="nav has-shadow" style="position: fixed !important; top: 0; left: 0; right: 0;">
     <div class="container">
         <div class="nav-left">
             <a href="/" class="nav-item">
