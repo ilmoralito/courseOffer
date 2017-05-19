@@ -1,4 +1,4 @@
-<nav class="nav has-shadow" style="position: fixed !important; top: 0; left: 0; right: 0;">
+<nav class="nav has-shadow">
     <div class="container">
         <div class="nav-left">
             <a href="/" class="nav-item">
@@ -13,8 +13,11 @@
         </span>
         
         <div id="nav-menu" class="nav-right nav-menu">
-            <a href="/subscribe" class="nav-item is-tab">
-                Suscribete
+            <a href="/" class="nav-item is-tab {{ $controller == 'HomeController' ? 'is-active' : '' }}">
+                Inicio
+            </a>
+            <a href="/companies" class="nav-item is-tab {{ $controller == 'CompanyController' ? 'is-active' : '' }}">
+                Empresas
             </a>
             <a href="/offers" class="nav-item is-tab {{ $controller == 'OfferController' ? 'is-active' : '' }}">
                 Cursos

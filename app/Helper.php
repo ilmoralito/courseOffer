@@ -13,11 +13,17 @@ class Helper
             [
                 'name' => 'Estadisticas',
                 'courses' => [
+                    'Estadisticas con SPSS',
+                    'Estadisticas',
+                    'Proyect'
+                ]
+            ],[
+                'name' => 'Ofimatica',
+                'courses' => [
+                    'Introduccion a Office 365',
                     'Excel basico',
                     'Excel Avanzado',
-                    'Diplomado de Excel',
-                    'Estadisticas con SPSS',
-                    'Estadisticas'
+                    'Diplomado de Excel'
                 ]
             ],[
                 'name' => 'Ciencias de la computacion',
@@ -33,7 +39,15 @@ class Helper
                     'Marketing digital',
                     'Marketing',
                     'SEO',
-                    'Email marketing'
+                    'Email marketing',
+                    'Introduccion al marketing de afiliados'
+                ]
+            ],[
+                'name' => 'DevOps',
+                'courses' => [
+                    'PIVOTAL Web Services',
+                    'Google clouds',
+                    'Microsoft Azure'
                 ]
             ]
         ]);
@@ -392,5 +406,27 @@ class Helper
         ]);
 
         return $headquarters;
+    }
+
+    public function companies()
+    {
+        return collect([
+            [
+                'name' => 'B2Gold',
+                'site' => 'http://www.b2gold.com/',
+                'logo' => 'https://s3-us-west-2.amazonaws.com/ni.edu.leon.ucc/logo/b2gold-logo-min.jpg',
+                'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi iure quisquam mollitia vel, esse, provident suscipit officia et, perferendis blanditiis tempore quas quibusdam ex aliquam. Sit, repellat amet hic placeat.'
+            ],[
+                'name' => 'OneLink',
+                'site' => 'http://www.getcom.com.sv/es',
+                'logo' => 'https://s3-us-west-2.amazonaws.com/ni.edu.leon.ucc/logo/onelink-logo-min.jpg',
+                'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa ea deserunt omnis vitae voluptatem autem assumenda asperiores quidem accusamus necessitatibus aut repellendus quis repudiandae perferendis adipisci, veniam minima, maxime repellat.'
+            ],[
+                'name' => 'Pro Mujer',
+                'site' => 'https://nicaragua.promujer.org/',
+                'logo' => 'https://s3-us-west-2.amazonaws.com/ni.edu.leon.ucc/logo/pro-mujer-logo-min.jpg',
+                'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias accusantium corrupti, praesentium nisi porro id explicabo placeat, cumque ullam neque, excepturi voluptatibus perferendis possimus modi. Earum, eligendi placeat accusamus provident!'
+            ]
+        ]);
     }
 }
