@@ -44,7 +44,7 @@
 
                         <div class="content">
                             <div class="box">
-                                <p class="subtitle">¿Como resivir los cursos?</p>
+                                <p class="subtitle">¿Como resibir los cursos?</p>
                             
                                 <p>La universidad cuenta con laboratorios climatizados y acondicionados para impartir los cursos</p>
 
