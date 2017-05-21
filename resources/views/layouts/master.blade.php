@@ -17,9 +17,7 @@
 
         <section class="section">
             <div class="container">
-                <div class="columns">
-                    @yield('body')
-                </div>
+                @yield('body')
             </div>
         </section>
 

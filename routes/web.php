@@ -4,6 +4,8 @@ Route::get('/', 'HomeController@index');
 
 Route::get('/companies', 'CompanyController@index');
 
+Route::get('/trends', 'TrendController@index');
+
 Route::get('/subscribe', 'SubscribeController@index');
 
 Route::get('/contact', 'ContactController@index');

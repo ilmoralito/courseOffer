@@ -188,18 +188,13 @@
     <body>
         @include('partials.nav')
 
-        <section class="hero is-primary">
+        <section class="hero is-primary is-bold" style="background-image: url({{ $offer['background_image'] }}); background-position: center; background-size: cover;">
             <div class="hero-body">
-                <div class="container">
-                    <div class="columns is-vcentered">
-                        <div class="column">
-                            @yield('hero')
-                        </div>
+                    <div class="container is-vcentered">
+                        <h1 class="title">{{ $offer['name'] }}</h1>
+                        <h2 class="subtitle">Dirigo a profesionales de {{ implode( ', ', $offer['addressed_to']) }}</h2>
 
-                        <div class="column is-one-quarter has-text-centered">
-                            <a href="#" id="sharingButton" class="button is-white is-outlined" alt="Comparte con los amigos">Comparte</a>
-                        </div>
-                    </div>
+                        <a href="#" id="sharingButton" class="button is-danger" alt="Comparte con los amigos">Comparte</a>
                 </div>
             </div>
 
@@ -253,6 +248,5 @@
                 });
             });
         </script>
-
     </body>
 </html>

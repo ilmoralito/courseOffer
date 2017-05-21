@@ -2,24 +2,19 @@
 
 @section('title', 'Oferta academica')
 
-@section('hero')
-    <h1 class="title">{{ $offer['name'] }}</h1>
-    <h2 class="subtitle">Dirigo a profesionales de {{ implode( ', ', $offer['addressed_to']) }}</h2>
-@endsection
-
 @section('body')
     <div class="columns">
         <div class="column">
             <table class="table">
                 <thead>
                     <tr>
-                        <th>Tutores</th>
+                        <th>Instructores</th>
                     </tr>
                 </thead>
                 <tbody>
                     @foreach ($offer['tutors'] as $tutor)
                         <tr>
-                            <td>{{ $tutor['title'] }} {{ $tutor['name'] }}</td>
+                            <td>{{ $tutor['name'] }}, {{ $tutor['title'] }}</td>
                         </tr>
                     @endforeach
                 </tbody>

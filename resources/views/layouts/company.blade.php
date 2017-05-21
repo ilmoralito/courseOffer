@@ -13,14 +13,11 @@
     <body>
         @include('partials.nav')
 
-        <section class="hero is-medium" style="background-image: url('https://s3-us-west-2.amazonaws.com/uccleon.peide.website/photos/startup-photos-min.jpg'); background-size: cover;">
+        <section class="hero is-primary is-bold is-medium" style="background-image: url('   https://s3-us-west-2.amazonaws.com/uccleon.peide.website/photos/StockSnap_A28WZDTYEY-min.jpg'); background-size: cover;">
             <div class="hero-body">
                 <div class="container has-text-centered">
-                    <h1 class="title" style="color: #FFF;">Cursos de formación para empresas</h1>
-
-                    <p class="subtitle" style="color: #FFF;">
-                        Lorem ipsum dolor sit amet
-                    </p>
+                    <h1 class="title">Cursos de formación para empresas</h1>
+                    <h2 class="subtitle">Lorem ipsum dolor sit amet</h2>
                 </div>
             </div>
         </section>

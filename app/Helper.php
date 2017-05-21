@@ -65,8 +65,9 @@ class Helper
                 'headquarter' => 'Leon',
                 'offers' => [
                     [
-                        'name' => 'Course name one',
+                        'name' => 'Course name',
                         'slug' => 'Course-name-one',
+                        'background_image' => 'https://s3-us-west-2.amazonaws.com/uccleon.peide.website/photos/StockSnap_UQ9AB8NRV9-min.jpg',
                         'image' => 'https://s3-us-west-2.amazonaws.com/ni.edu.leon.ucc/temp/dperrera-rails.png',
                         'price' => '125',
                         'start_date' => Carbon::parse('2017-05-14 08:00')->formatLocalized('%d de %B'),
@@ -103,10 +104,10 @@ class Helper
                         'tutors' => [
                             [
                                 'name' => 'John Doe',
-                                'title' => 'MSC'
+                                'title' => 'Microsoft Learning Team'
                             ],[
                                 'name' => 'Jane Doe',
-                                'title' => 'Dr.'
+                                'title' => 'Technical Consulting Engineer'
                             ]
                         ],
                         'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim nobis, fugit voluptates excepturi iusto officiis reprehenderit quas nam sint tempore, assumenda similique numquam ullam nostrum quisquam iure dolor expedita repudiandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta ratione ab reprehenderit omnis voluptates quae ullam vero, quidem maxime molestiae tenetur, voluptatibus hic eaque numquam est quas, dicta repellendus nulla.',
@@ -117,8 +118,9 @@ class Helper
                             'Requisite1', 'Requisite2', 'Requisite3'
                         ]
                     ],[
-                        'name' => 'Course name two',
+                        'name' => 'Course name',
                         'slug' => 'Course-name-two',
+                        'background_image' => ' https://s3-us-west-2.amazonaws.com/uccleon.peide.website/photos/StockSnap_U3W2SHOLWQ-min.jpg',
                         'image' => 'https://s3-us-west-2.amazonaws.com/ni.edu.leon.ucc/temp/ruby.png',
                         'price' => '80',
                         'start_date' => Carbon::parse('2017-05-14 08:00')->formatLocalized('%d de %B'),
@@ -154,7 +156,7 @@ class Helper
                         'tutors' => [
                             [
                                 'name' => 'John Doe',
-                                'title' => 'MSC'
+                                'title' => 'Technical Consulting Engineer'
                             ]
                         ],
                         'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim nobis, fugit voluptates excepturi iusto officiis reprehenderit quas nam sint tempore, assumenda similique numquam ullam nostrum quisquam iure dolor expedita repudiandae.',
@@ -170,6 +172,7 @@ class Helper
                     [
                         'name' => 'Course name goes here',
                         'slug' => 'Course-name-goes-here',
+                        'background_image' => 'https://s3-us-west-2.amazonaws.com/uccleon.peide.website/photos/StockSnap_NLBN1GQQET-min.jpg',
                         'image' => 'https://s3-us-west-2.amazonaws.com/ni.edu.leon.ucc/temp/whitespark_1x.png',
                         'price' => '120',
                         'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa odit, reiciendis doloribus! Praesentium at aliquid dolorum delectus odit tenetur quasi maiores voluptatum quia, suscipit possimus ullam! Reiciendis consequuntur, veritatis magni.',
@@ -208,13 +211,13 @@ class Helper
                         'tutors' => [
                             [
                                 'name' => 'Kevin Duran',
-                                'title' => 'Dr.'
+                                'title' => 'Developer Intel Corporation'
                             ],[
                                 'name' => 'Kevin Garnet',
-                                'title' => 'Ing.'
+                                'title' => 'Professor University Côte d’Azur'
                             ],[
                                 'name' => 'Peter Beckman',
-                                'title' => 'Dr.'
+                                'title' => 'Learning Team Microsoft'
                             ]
                         ],
                         'prerequisites' => []
@@ -226,6 +229,7 @@ class Helper
                     [
                         'name' => 'Course no name goes here',
                         'slug' => 'Course-no-name-goes-here',
+                        'background_image' => 'https://s3-us-west-2.amazonaws.com/uccleon.peide.website/photos/StockSnap_L278918975-min.jpg',
                         'image' => 'https://s3-us-west-2.amazonaws.com/ni.edu.leon.ucc/temp/google_utm_d_2x.png',
                         'price' => '80',
                         'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa odit, reiciendis doloribus! Praesentium at aliquid dolorum delectus odit tenetur quasi maiores voluptatum quia, suscipit possimus ullam! Reiciendis consequuntur, veritatis magni.',
@@ -275,19 +279,20 @@ class Helper
                         'tutors' => [
                             [
                                 'name' => 'Kevin Duran',
-                                'title' => 'Dr.'
+                                'title' => 'Technical Consulting Engineer Intel Corporation'
                             ],[
                                 'name' => 'Peter Beckman',
-                                'title' => 'Dr.'
+                                'title' => 'Technical Consulting Engineer Intel Corporation'
                             ],[
                                 'name' => 'Ray Charles',
-                                'title' => 'Dr.'
+                                'title' => 'Developer Intel Corporation'
                             ]
                         ],
                         'prerequisites' => ['Requisite1', 'Requisite4']
                     ],[
                         'name' => 'Course all name goes here',
                         'slug' => 'Course-all-name-goes-here',
+                        'background_image' => ' https://s3-us-west-2.amazonaws.com/uccleon.peide.website/photos/StockSnap_9PZ3E9U67E-min.jpg',
                         'image' => 'https://s3-us-west-2.amazonaws.com/ni.edu.leon.ucc/temp/jsfiddle_1x.png',
                         'price' => '120',
                         'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa odit, reiciendis doloribus! Praesentium at aliquid dolorum delectus odit tenetur quasi maiores voluptatum quia, suscipit possimus ullam! Reiciendis consequuntur, veritatis magni.',
@@ -328,19 +333,20 @@ class Helper
                         'tutors' => [
                             [
                                 'name' => 'Kevin Duran',
-                                'title' => 'Dr.'
+                                'title' => 'Professor University Côte d’Azur'
                             ],[
                                 'name' => 'Kevin Garnet',
-                                'title' => 'Ing.'
+                                'title' => 'Learning Team Microsoft'
                             ],[
                                 'name' => 'Peter Beckman',
-                                'title' => 'Dr.'
+                                'title' => 'Technical Consulting Engineer Intel Corporation'
                             ]
                         ],
                         'prerequisites' => []
                     ],[
                         'name' => 'Course no name goes here',
                         'slug' => 'Course-no-name-goes-here',
+                        'background_image' => 'https://s3-us-west-2.amazonaws.com/uccleon.peide.website/photos/StockSnap_9PZ3E9U67E-min.jpg',
                         'image' => 'https://s3-us-west-2.amazonaws.com/ni.edu.leon.ucc/temp/123_1x.png',
                         'price' => '80',
                         'description' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa odit, reiciendis doloribus! Praesentium at aliquid dolorum delectus odit tenetur quasi maiores voluptatum quia, suscipit possimus ullam! Reiciendis consequuntur, veritatis magni.',
@@ -390,13 +396,13 @@ class Helper
                         'tutors' => [
                             [
                                 'name' => 'Kevin Duran',
-                                'title' => 'Dr.'
+                                'title' => 'Technical Consulting Engineer Intel Corporation'
                             ],[
                                 'name' => 'Peter Beckman',
-                                'title' => 'Dr.'
+                                'title' => 'Developer Intel Corporation'
                             ],[
                                 'name' => 'Ray Charles',
-                                'title' => 'Dr.'
+                                'title' => 'Professor University Côte d’Azur'
                             ]
                         ],
                         'prerequisites' => ['Requisite1', 'Requisite2']
