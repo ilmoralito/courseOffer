@@ -22,7 +22,7 @@
             </div>
         </section>
 
-        <section class="section">
+        <section class="section" style="background-color: #eee;">
             <div class="container">
                 @yield('companies')
             </div>
@@ -42,10 +42,36 @@
                         <div class="content">
                             <div class="box">
                                 <p class="subtitle">¿Como recibir los cursos?</p>
-                            
+
                                 <p>La universidad cuenta con laboratorios climatizados y acondicionados para impartir los cursos</p>
 
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A mollitia odio aspernatur quisquam similique magni rerum cum eveniet modi ducimus eius quam blanditiis asperiores, magnam itaque at architecto amet voluptate.</p>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <div class="box">
+                                <p class="subtitle">Cursos en tendencia</p>
+
+                                <p>
+                                    <span>Excel</span>
+                                    <progress class="progress is-danger" value="90" max="100">90%</progress>
+                                </p>
+
+                                <p>
+                                    <span>Proyect</span>
+                                    <progress class="progress is-warning" value="75" max="100">75%</progress>
+                                </p>
+
+                                <p>
+                                    <span>Marketing digital</span>
+                                    <progress class="progress is-success" value="60" max="100">60%</progress>
+                                </p>
+                                <p>
+
+                                    <span>Sistema de control de versiones con Git y Github</span>
+                                    <progress class="progress is-info" value="45" max="100">45%</progress>
+                                </p>
                             </div>
                         </div>
                     </div>

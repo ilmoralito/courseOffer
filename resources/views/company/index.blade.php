@@ -3,25 +3,11 @@
 @section('title', 'Cursos para empresas e instituciones')
 
 @section('companies')
-    <p class="subtitle">Empresas con las que hemos colaborado</p>
-
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Nombre de la empresa</th>
-            </tr>
-        </thead>
-
-        <tbody>
-            @foreach ($companies as $company)
-                <tr>
-                    <td>
-                        <a href="{{ $company['site'] }}">{{ $company['name'] }}</a>
-                    </td>
-                </tr>
-            @endforeach
-        </tbody>
-    </table>
+    <div class="has-text-centered">
+        @foreach ($companies as $company)
+            <a href="{{ $company['site'] }}" style="margin: 10px;">{{ $company['name'] }}</a>
+        @endforeach
+    </div>
 @endsection
 
 @section('subjects')
